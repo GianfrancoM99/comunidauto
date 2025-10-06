@@ -1,5 +1,5 @@
 -- Ejercicio 1: listado ascendente por precio --
-SELECT FROM * comunidauto.autos ORDER BY precio ASC;
+SELECT * FROM  comunidauto.autos ORDER BY precio ASC;
 
 -- Ejercicio 2: autos que precio menor a 10 millones --
 SELECT * FROM comunidauto.autos WHERE precio < 10000000;
