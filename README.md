@@ -24,4 +24,6 @@ Este repositorio contiene la resolución a la prueba práctica para la vacante d
 
 En este caso, **XAMPP** con Apache y MySQL runneados, colocando en la barra de navegación la ruta local al archivo.
 
+`SQL`
 
+Vía **XAMPP** iniciar phpMyAdmin, importar `schema.sql`, y con la BD asentada, ejecutar las sentencias de `queries.sql` en la aplicación.
