@@ -11,21 +11,20 @@ Mi objetivo con esta entrega fue cumplir con los requerimientos técnicos y, al 
 ## 🧭 Estructura del proyecto
 
 comunidauto/
-│
-├── css/
-│ ├── html.css → estilos para las páginas HTML
-│ └── php.css → estilos para las páginas PHP
-│
+├──css/
+ └──html.css → estilos para las páginas HTML
+ └──php.css → estilos para las páginas PHP
+
 ├── js/
-│ └── main.js → lógica de JavaScript: lista dinámica, buscador, conversión de moneda
-│
+  └── main.js → lógica de JavaScript: lista dinámica, buscador, conversión de moneda
+
 ├── php/
-│ └── main.php → lógica principal en PHP: listado, filtro y buscador de autos
-│
+  └── main.php → lógica principal en PHP: listado, filtro y buscador de autos
+
 ├── sql/
-│ ├── schema.sql → creación de tablas (autos, clientes, ventas)
-│ └── queries.sql → consultas SQL pedidas en la prueba técnica
-│
+ ├── schema.sql → creación de tablas (autos, clientes, ventas)
+ └── queries.sql → consultas SQL pedidas en la prueba técnica
+
 ├── index.html → menú principal para navegar entre las secciones
 └── README.md → documentación del proyecto
 
@@ -52,7 +51,7 @@ comunidauto/
 4. **Abrí phpMyAdmin** desde tu navegador: http://localhost/phpmyadmin
 5. **Creá la base de datos:** CREATE DATABASE comunidauto;
 6. **Importá las tablas desde:** `sql/schema.sql.`
-7. **(Opcional) Cargá datos de prueba con INSERT INTO o usando tus propias consultas.**
+7. **(Opcional) Cargá datos de prueba con INSERT INTO (`sql/queries.sql`) o usando tus propias consultas.**
 8. **Ejecutá el proyecto:** http://localhost/comunidauto/index.html
 9. **Para testear el backend PHP:** http://localhost/comunidauto/php/main.php
 

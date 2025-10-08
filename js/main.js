@@ -22,13 +22,13 @@ let autos = [
 let tasaDolar = 1450;
 let monedaActual = "ars";
 
-function showVehicles(lista){
+function mostrarAutos(lista){
   let ul = document.getElementById("lista");
-  ul.className="list_ul";
+  ul.className="listaUl";
   ul.innerHTML = "";
   lista.forEach(a=>{
     let li = document.createElement("li");
-    li.className="list_li";
+    li.className="listaLi";
     let precio = a.precio;
     let simbolo = "$";
     if(monedaActual === "usd") {
@@ -39,7 +39,7 @@ function showVehicles(lista){
     ul.appendChild(li);
   });
 }
-showVehicles(autos);
+mostrarAutos(autos);
 
 document.getElementById("moneda").addEventListener("change", e=>{
   monedaActual = e.target.value;
@@ -48,7 +48,7 @@ document.getElementById("moneda").addEventListener("change", e=>{
     a.marca.toLowerCase().includes(texto) ||
     a.modelo.toLowerCase().includes(texto)
   );
-  showVehicles(filtrados);
+  mostrarAutos(filtrados);
 });
 
 document.getElementById("buscar").addEventListener("input", e=>{
@@ -57,5 +57,5 @@ document.getElementById("buscar").addEventListener("input", e=>{
     a.marca.toLowerCase().includes(texto) ||
     a.modelo.toLowerCase().includes(texto)
   );
-  showVehicles(filtrados);
+  mostrarAutos(filtrados);
 });
