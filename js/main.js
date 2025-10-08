@@ -21,9 +21,11 @@ let monedaActual = "ars";
 
 function mostrar(lista){
   let ul = document.getElementById("lista");
+  ul.className="list_ul";
   ul.innerHTML = "";
   lista.forEach(a=>{
     let li = document.createElement("li");
+    li.className="list_li";
     let precio = a.precio;
     let simbolo = "$";
     if(monedaActual === "usd") {
