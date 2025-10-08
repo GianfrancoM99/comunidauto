@@ -11,6 +11,7 @@ Mi objetivo con esta entrega fue cumplir con los requerimientos técnicos y, al 
 ## 🧭 Estructura del proyecto
 
 comunidauto/
+
 ├──css/
  └──html.css → estilos para las páginas HTML
  └──php.css → estilos para las páginas PHP
@@ -26,6 +27,7 @@ comunidauto/
  └── queries.sql → consultas SQL pedidas en la prueba técnica
 
 ├── index.html → menú principal para navegar entre las secciones
+
 └── README.md → documentación del proyecto
 
 ## ⚙️ Tecnologías utilizadas
