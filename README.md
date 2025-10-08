@@ -61,9 +61,9 @@ comunidauto/
 
 El archivo `schema.sql` crea tres tablas relacionadas:
 
-- **autos** → id, marca, modelo, precio, año  
-- **clientes** → id, nombre, apellido, email, teléfono  
-- **ventas** → id, cliente_id, auto_id, fecha, precio_venta  
+- **autos** → id, marca, modelo, precio, anio 
+- **clientes** → id, nombre, apellido, email
+- **ventas** → id, cliente_id, auto_id, fecha
 
 Las consultas en `queries.sql` permiten obtener:
 1. Autos ordenados por precio (ascendente).  
