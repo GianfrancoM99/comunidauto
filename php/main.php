@@ -2,8 +2,6 @@
 
 <?php   
 
-// base de datos manual
-
 $autos_bd =  [
     [
         "id" => 1,
@@ -67,12 +65,12 @@ $autos_bd =  [
     ],
 ];
 
-// parametros para ejercicio de filtrar y de buscar
+// parametros para  filtrar y de buscar
 
 $filtro_precio = $_GET['precio'] ?? null;
 $busqueda_marca_modelo = $_GET['buscar'] ?? null;
 
-// función lista estática de autos
+//
 
 function mostrarTabla($lista) {
   echo "<table class='tablaPhp' border='5'>";
@@ -87,8 +85,6 @@ function mostrarTabla($lista) {
   echo "</table>";
 }
 
-// función filtrar autos por precio
-
 $autos_filtrados = $autos_bd;
 
 if ($filtro_precio) {
@@ -96,8 +92,6 @@ if ($filtro_precio) {
     return $a['precio'] < $filtro_precio;
   });
 }
-
-// función buscar autos por marca o modelo
 
 if ($busqueda_marca_modelo) {
   $busqueda = strtolower($busqueda_marca_modelo);
