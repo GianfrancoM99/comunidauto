@@ -22,7 +22,7 @@ Este repositorio contiene la resolución a la prueba práctica para la vacante d
 
 `PHP`
 
-En este caso, **XAMPP** con Apache y MySQL runneados, colocando en la barra de navegación la ruta local al archivo.
+En este caso, **XAMPP** con Apache y MySQL runneados, colocando en la barra de navegación la ruta local al archivo. En mi caso: **http://localhost/comunidauto/comunidauto/php/main.php**
 
 `SQL`
 
