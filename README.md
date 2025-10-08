@@ -87,7 +87,7 @@ Las consultas en `queries.sql` permiten obtener:
 - Convierte precios de pesos argentinos a dólares (valor fijo).  
 
 ### `index.html`
-- Página principal que funciona como menú para acceder a cada parte del proyecto.  
+- Página para testear el JS.
 
 ---
 
