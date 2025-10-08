@@ -1,3 +1,5 @@
+// creación array para iterar
+
 let autos = [
     {marca:"Ford", modelo:"Fiesta", precio:5000000},
     {marca:"Toyota", modelo:"Corolla", precio:12000000},
@@ -16,10 +18,11 @@ let autos = [
     {marca:"Suzuki", modelo:"Swift", precio:6000000}
 ];
 
+// datos para el selector
 let tasaDolar = 1450;
 let monedaActual = "ars";
 
-function mostrar(lista){
+function showVehicles(lista){
   let ul = document.getElementById("lista");
   ul.className="list_ul";
   ul.innerHTML = "";
@@ -36,7 +39,7 @@ function mostrar(lista){
     ul.appendChild(li);
   });
 }
-mostrar(autos);
+showVehicles(autos);
 
 document.getElementById("moneda").addEventListener("change", e=>{
   monedaActual = e.target.value;
@@ -45,7 +48,7 @@ document.getElementById("moneda").addEventListener("change", e=>{
     a.marca.toLowerCase().includes(texto) ||
     a.modelo.toLowerCase().includes(texto)
   );
-  mostrar(filtrados);
+  showVehicles(filtrados);
 });
 
 document.getElementById("buscar").addEventListener("input", e=>{
@@ -54,5 +57,5 @@ document.getElementById("buscar").addEventListener("input", e=>{
     a.marca.toLowerCase().includes(texto) ||
     a.modelo.toLowerCase().includes(texto)
   );
-  mostrar(filtrados);
+  showVehicles(filtrados);
 });

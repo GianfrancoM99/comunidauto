@@ -74,7 +74,7 @@ $busqueda_marca_modelo = $_GET['buscar'] ?? null;
 
 // función lista estática de autos
 
-function mostrar_tabla($lista) {
+function showTable($lista) {
   echo "<table class='tabla-php' border='5'>";
   echo "<tr><th>Marca</th><th>Modelo</th><th>Precio</th></tr>";
   foreach ($lista as $a) {
@@ -93,7 +93,7 @@ $autos_filtrados = $autos_bd;
 
 if ($filtro_precio) {
   $autos_filtrados = array_filter($autos_bd, function($a) use ($filtro_precio) {
-    return $a['precio'] <= $filtro_precio;
+    return $a['precio'] < $filtro_precio;
   });
 }
 
@@ -128,6 +128,6 @@ if ($busqueda_marca_modelo) {
 </body>
 
 <?php
-mostrar_tabla($autos_filtrados);
+showTable($autos_filtrados);
 ?>
 
